@@ -1,7 +1,7 @@
 .navbar {
     background-color: azure;
     /* background-color: #f0f8ffc4; */
-    width: 105%;
+    width: 100vw;
     height: 90px;
     margin: 0 -35px;
 }

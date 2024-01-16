@@ -21,7 +21,19 @@ const LoginForm = () => {
     const googleSignIn = () => {
         const googleAuthProvider = new GoogleAuthProvider();
         signInWithPopup(auth, googleAuthProvider);
+       
+        
     }
+
+    auth.onAuthStateChanged(user=>{
+        if(user){
+            localStorage.setItem('islogged',true)
+            navigate("/home")
+
+        }
+    })
+
+
 
     const logIn = async (e) => {
 
