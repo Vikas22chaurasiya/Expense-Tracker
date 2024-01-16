@@ -6,8 +6,9 @@ import { Provider } from './context/context';
 import { SpeechProvider } from '@speechly/react-client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+const appId = process.env.SPEECHLY_ID
 ReactDOM.render(
-    <SpeechProvider appId='c48b327a-22ec-4aa1-a6e8-548eb59cbb34' language="en-US">
+    <SpeechProvider appId={appId} language="en-US">
         <Provider>
             <Router>
                 <App />
@@ -16,5 +17,3 @@ ReactDOM.render(
     </SpeechProvider>,
     document.getElementById('root')
 );
-
-// 7c4aee08-1073-4a32-b862-ebe1850e0732

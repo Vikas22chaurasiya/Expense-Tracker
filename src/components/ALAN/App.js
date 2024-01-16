@@ -23,7 +23,7 @@ const App = () => {
 
 	useEffect(() => {
 		alanBtn({
-			key: '9761b53fd77dea4f3aacc4881315f6cf2e956eca572e1d8b807a3e2338fdd0dc/stage',
+			key: process.env.ALAN_KEY,
 			onCommand: ({ command, articles, number }) => {
 
 				console.log(articles)

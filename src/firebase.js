@@ -1,17 +1,17 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-
+require("dotenv").config()
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBV5Q65AQThjDiDMVCd8QDL4sIKiaZ3xWQ",
-  authDomain: "expense-tracker-5cb0b.firebaseapp.com",
-  projectId: "expense-tracker-5cb0b",
-  storageBucket: "expense-tracker-5cb0b.appspot.com",
-  messagingSenderId: "328403550514",
-  appId: "1:328403550514:web:d395b27a543ff04510972b"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID ,
+  storageBucket: process.env.REACT_APP_FIREBASE_STRORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
